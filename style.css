@@ -247,3 +247,64 @@ body{
     text-align:center;
 
 }
+.boot-screen{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+#terminalText{
+
+    flex:1;
+
+    color:var(--green);
+
+    font-family:
+        Consolas,
+        monospace;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    white-space:pre-wrap;
+
+}
+
+#accessBtn{
+
+    align-self:center;
+
+    margin-bottom:20px;
+
+    padding:12px 28px;
+
+    border:1px solid var(--orange);
+
+    background:transparent;
+
+    color:var(--orange);
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#accessBtn:hover{
+
+    background:var(--orange);
+
+    color:black;
+
+}
