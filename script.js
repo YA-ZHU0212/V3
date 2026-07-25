@@ -52,7 +52,30 @@ function render() {
     switch (currentState) {
 
         case STATES.BOOT:
-            renderBoot();
+            function renderBoot() {
+
+    updateStatus({
+        status: "BOOTING",
+        database: "OFFLINE",
+        user: "UNKNOWN",
+        driver: "SEARCHING"
+    });
+
+    screen.innerHTML = `
+        <div class="boot-screen">
+
+            <div id="terminalText"></div>
+
+            <button id="accessBtn" hidden>
+                ACCESS FILE
+            </button>
+
+        </div>
+    `;
+
+    startBootSequence();
+
+};
             break;
 
         case STATES.USER:
