@@ -105,3 +105,30 @@ body{
     );
 
 }
+/* ===============================
+   Terminal
+================================ */
+
+#terminal{
+
+    width:min(92vw,430px);
+
+    height:min(90vh,820px);
+
+    border:1px solid rgba(255,153,0,.35);
+
+    border-radius:24px;
+
+    background:rgba(15,15,15,.95);
+
+    box-shadow:
+
+        0 0 30px rgba(255,153,0,.12);
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
