@@ -5,23 +5,25 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>SMART BRAIN Terminal</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
 <body>
 
     <!-- 掃描線 -->
-    <div id="scan"></div>
+    <div id="scanline"></div>
 
-    <!-- 背景光 -->
-    <div id="glow"></div>
+    <!-- 背景發光 -->
+    <div id="backgroundGlow"></div>
 
-    <!-- 主畫面 -->
+    <!-- 主系統 -->
     <main id="terminal">
 
         <!-- Header -->
@@ -33,53 +35,39 @@
 
         </header>
 
-        <!-- 狀態列 -->
-        <aside id="statusPanel">
+        <!-- Status -->
+        <section id="statusPanel">
 
-            <div class="statusRow">
-
+            <div class="statusItem">
                 <span>STATUS</span>
-
-                <strong id="statusValue">
-                    BOOTING
-                </strong>
-
+                <strong id="status">BOOTING</strong>
             </div>
 
-            <div class="statusRow">
-
+            <div class="statusItem">
                 <span>DATABASE</span>
-
-                <strong id="databaseValue">
-                    OFFLINE
-                </strong>
-
+                <strong id="database">OFFLINE</strong>
             </div>
 
-            <div class="statusRow">
-
+            <div class="statusItem">
                 <span>USER</span>
-
-                <strong id="userValue">
-                    UNKNOWN
-                </strong>
-
+                <strong id="user">UNKNOWN</strong>
             </div>
 
-            <div class="statusRow">
-
+            <div class="statusItem">
                 <span>DRIVER</span>
-
-                <strong id="driverValue">
-                    SEARCHING
-                </strong>
-
+                <strong id="driver">SEARCHING</strong>
             </div>
 
-        </aside>
+        </section>
 
-        <!-- 主內容 -->
+        <!-- Boot Terminal -->
         <section id="screen">
+
+            <div id="terminalText"></div>
+
+            <button id="accessButton">
+                ACCESS FILE
+            </button>
 
         </section>
 
