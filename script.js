@@ -160,3 +160,29 @@ function renderBirthday() {
     screen.innerHTML = "<h2>HAPPY BIRTHDAY</h2>";
 
 }
+function startBootSequence() {
+
+    const terminal = document.getElementById("terminalText");
+
+    const lines = [
+        "> Booting System...",
+        "> Connecting Database...",
+        "> Loading User Profile...",
+        "> Authorization Complete."
+    ];
+
+    let html = "";
+
+    lines.forEach((line, index) => {
+
+        setTimeout(() => {
+
+            html += line + "<br><br>";
+
+            terminal.innerHTML = html;
+
+        }, index * 900);
+
+    });
+
+}
