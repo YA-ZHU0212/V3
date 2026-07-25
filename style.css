@@ -169,3 +169,52 @@ body{
     font-size:15px;
 
 }
+/* ===============================
+   Status Panel
+================================ */
+
+#statusPanel{
+
+    margin:0 24px;
+
+    padding:18px;
+
+    border:1px solid rgba(255,153,0,.25);
+
+    border-radius:16px;
+
+    background:#161616;
+
+}
+
+.statusRow{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.statusRow:last-child{
+
+    border:none;
+
+}
+
+.statusRow span{
+
+    color:#999;
+
+    letter-spacing:2px;
+
+}
+
+.statusRow strong{
+
+    color:var(--green);
+
+}
