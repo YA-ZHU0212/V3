@@ -218,3 +218,32 @@ body{
     color:var(--green);
 
 }
+/* ===============================
+   Screen
+================================ */
+
+#screen{
+
+    flex:1;
+
+    padding:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.boot-screen{
+
+    width:100%;
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    text-align:center;
+
+}
