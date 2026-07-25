@@ -186,3 +186,14 @@ function startBootSequence() {
     });
 
 }
+const bootLines = [
+
+    "> Booting System...",
+
+    "> Connecting Database...",
+
+    "> Loading User Profile...",
+
+    "> Authorization Complete."
+
+];
